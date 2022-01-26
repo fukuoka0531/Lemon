@@ -1,0 +1,514 @@
+/****************************************
+* リセットCSS
+*****************************************/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+/****************************************
+* フォント設定
+*****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+html, body {
+	font-size: 16px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+/*
+Theme Name: オリジナルテーマ(School)
+*/
+ 
+/*この下からCSSを書いてください*/
+
+body{
+	margin: 0;
+}
+/****************************************
+* ヘッダー
+*****************************************/
+header {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid black;
+	
+}
+.icon{
+	margin: auto 0;
+	font-size: 30px;
+}
+
+/* ボタン*/
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: yellow;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: yellow;
+}
+
+.fa-position-left {
+  position: absolute;
+  top: calc(50% - .5em);
+  left: 1rem;
+}
+
+.btn--radius,
+a.btn--radius,
+button.btn--radius
+{
+    border-radius: 100vh;
+}
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 480px){
+	.link{
+		display: none;
+	}
+	
+
+}
+/****************************************
+* フッター
+*****************************************/
+footer{
+	background-color: #FFE4B5;
+}
+.company{
+	margin-top: 30px;
+	text-align: center;
+}
+.copy{
+	font-size: x-small;
+	text-align: center;
+	margin-top: 1rem;
+	
+	
+	
+}
+.follow{
+	text-align: right;
+	margin-right: 10%;
+	
+}
+.follow p{
+	margin-bottom: 20px;
+}
+.follow img{
+	width: 3rem;
+	
+}
+ul{
+    justify-content: flex-end;
+	display: flex;
+	
+	
+}
+li{
+	margin-right: 20px;
+}
+
+@media (max-width: 480px){
+	.follow p{
+		display: none;
+
+	}
+	ul{
+		margin-right: 30%;
+	}
+	.follow img{
+		width: 2.5rem;
+	}
+
+}
+
+
+
+/****************************************
+* トップページ ファーストビューのイメージ
+*****************************************/
+.topimg img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+.topimg {
+	position: relative;
+}
+.toptext p{
+	position: absolute;
+	border-radius: 30px;
+	top: 40%;
+	left: 7%;
+	font-size: 50px;
+}
+.br__pc {
+	margin-left: 93%;
+}
+
+@media (max-width: 480px){
+	.toptext p{
+		font-size: 20px;
+		top: 44%;
+	}
+	.br__pc{
+		margin-left: 30%;
+	}
+	
+	
+}
+
+
+
+/****************************************
+* トップページ 特徴
+*****************************************/
+.lemon{
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+h1{
+	text-align: center;
+	font-size: x-large;
+}
+.content {
+	text-align: center;
+	margin: 60px auto 0;
+}
+.card{
+	width: 27%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 10px;
+	background-color: #fff;
+	box-shadow: 0 0 5px 5px rgb(0 0 0 / 3%);
+}
+.service__card__title {
+	margin-bottom: 20px;
+}
+.service__card__img img{
+	height: 333px;
+	margin-bottom: 20px;
+}
+.service__card__dis{
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+@media (max-width: 480px){
+	.card{
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+}
+
+
+
+/****************************************
+* トップページ 料金表
+*****************************************/
+.price {
+	background-color: #FFFFCC;
+	
+}
+.price h1{
+	margin-top: 35px;
+}
+
+.table{
+	margin-left: 19%;
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+table {
+	border-collapse: collapse;
+	width: 70%;
+}
+td, th {
+	padding: 5px;
+	border: 1px solid #333;
+	text-align: center;
+  }
+  .table_coment {
+	  margin-top: 30px;
+	  margin-bottom: 60px;
+  }
+
+/****************************************
+* トップページ 先生紹介
+*****************************************/
+.teacher__card__img img{
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	margin-top: 30px;
+}
+.card_teacher{
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 10px;
+	background-color: #fff;
+	box-shadow: 0 0 5px 5px rgb(0 0 0 / 3%);
+}
+@media (max-width: 480px){
+	.card_teacher{
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+}
+
+/****************************************
+* トップページ Location
+*****************************************/
+.location{
+	margin-top: 35px;
+}
+.location p{
+	text-align: center;
+	margin-top: 30px;
+}
+.map{
+	margin-left: 40%;
+	margin-top: 30px;
+}
+@media (max-width: 480px){
+	.map{
+		margin: 0 auto;
+	}
+}
+
+
+/****************************************
+* 問い合わせボタンmain
+*****************************************/
+.link_main {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+a.btn_ao_b {
+	display: flex;
+	align-items: center;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 1.3rem 2rem;
+	border: 2px solid #014897;
+	background: #fff;
+	text-decoration: none;
+	transition: 0.3s;
+  }
+  a.btn_ao_b:hover {
+	background-color: #e9f3fd;
+  }
+  a.btn_ao_b .b__text {
+	display: block;
+	flex-grow: 1;
+	color: #004386;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	padding-right: 15px;
+	font-size: 23px;
+  }
+  a.btn_ao_b .b__text::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	transform: rotate(45deg);
+	border-top: 3px solid #014897;
+	border-right: 3px solid #014897;
+	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
+	transition: 0.3s;
+  }
+  @media (max-width: 1200px) {
+	a.btn_ao_b .b__text {
+	  font-size: 18px;
+	  padding-right: 20px;
+	}
+	a.btn_ao_b .b__text::after {
+	  width: 12px;
+	  height: 12px;
+	}
+  }
+  @media (max-width: 480px) {
+	a.btn_ao_b .b__text {
+	  font-size: 14px;
+	  padding-right: 20px;
+	}
+	a.btn_ao_b .b__text::after {
+	  width: 10px;
+	  height: 10px;
+	}
+  }
+
+/****************************************
+* 固定ページ
+*****************************************/
+.page__header {
+	height: 250px;
+	position: relative;
+}
+.page__header img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center bottom;
+}
+.page__header__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.page__header__border {
+	width: 50px;
+	border-bottom: solid 2px #fff;
+	margin: 0 auto;
+}
+/****************************************
+* ContactForm7
+*****************************************/
+.ContactForm7__contact {
+    margin: 60px auto;
+    max-width: 850px;
+    padding: 0 20px;
+}
+.ContactForm7__contact__title {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.ContactForm7__contact__label {
+    font-weight: bold;
+}
+.ContactForm7__contact__label span {
+    font-weight: bold;
+    color: #fff;
+    background-color: #f00;
+    padding: 0 10px;
+    margin: 0 5px;
+    font-size: 0.6rem;
+}
+.ContactForm7__contact input, .ContactForm7__contact textarea {
+    width: 100%;
+    border: none;
+    border: solid 1px #00abae;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto 40px;
+}
+.ContactForm7__contact textarea {
+    height: 45vh;
+}
+.ContactForm7__contact__submit {
+    text-align: center;
+    max-width: 380px;
+    margin: 0 auto;
+}
+.ContactForm7__contact input[type="submit"] {
+    color: #fff;
+    background-color: #00abae;
+    border-radius: 50px;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 480px) {
+    .ContactForm7__contact {
+        padding: 10px;
+    }
+}
+
+/****************************************
+* News一覧詳細　single.php
+*****************************************/
+
