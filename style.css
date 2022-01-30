@@ -353,12 +353,14 @@ td, th {
 	margin-top: 30px;
 }
 .map{
-	margin-left: 40%;
+	position: relative;
 	margin-top: 30px;
+	text-align: center;
 }
 @media (max-width: 480px){
-	.map{
-		margin: 0 auto;
+	.map iframe{
+		width: 79%;
+		
 	}
 }
 
