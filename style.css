@@ -202,8 +202,8 @@ li{
 * トップページ ファーストビューのイメージ
 *****************************************/
 .topimg img{
-	width: 100%;
-	height: 500px;
+	width: 100vw;
+	height: 60rem;
 	object-fit: cover;
 }
 .topimg {
@@ -229,6 +229,10 @@ li{
 		margin-left: 30%;
 	}
 	
+	.topimg img{
+		max-width: 100%;
+		height: auto;
+	}
 	
 }
 
