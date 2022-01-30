@@ -228,7 +228,7 @@ li{
 	.br__pc{
 		margin-left: 30%;
 	}
-	
+	/** スマホ画像の大きさを最適化する**/
 	.topimg img{
 		max-width: 100%;
 		height: auto;
@@ -359,6 +359,7 @@ td, th {
 @media (max-width: 480px){
 	.map{
 		margin: 0 auto;
+		margin-left: 4rem;
 	}
 }
 
