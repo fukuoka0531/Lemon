@@ -359,7 +359,6 @@ td, th {
 @media (max-width: 480px){
 	.map{
 		margin: 0 auto;
-		margin-left: 4rem;
 	}
 }
 
