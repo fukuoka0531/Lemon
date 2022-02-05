@@ -70,6 +70,10 @@ header {
 	margin: auto 0;
 	font-size: 30px;
 }
+.icon a{
+	color: #212529;
+	font-size: xx-large;
+}
 
 /* ボタン*/
 .btn--orange,
@@ -146,6 +150,7 @@ button.btn {
 *****************************************/
 footer{
 	background-color: #FFE4B5;
+	padding: 0.5rem;
 }
 .company{
 	margin-top: 30px;
@@ -215,9 +220,17 @@ li{
 	top: 40%;
 	left: 7%;
 	font-size: 50px;
+	font-weight: bold;
+	
+}
+.toptext .br{
+	height: 7px;
+	background: repeating-linear-gradient(-45deg, #FFE4B5, #FFE4B5 2px, white 2px, white 4px);
+
 }
 .br__pc {
 	margin-left: 93%;
+	background: repeating-linear-gradient(-45deg, #FFE4B5, #FFE4B5 2px, white 2px, white 4px);
 }
 
 @media (max-width: 480px){
@@ -251,14 +264,15 @@ h1{
 }
 .content {
 	text-align: center;
-	margin: 60px auto 0;
+	margin: 5% auto;
 }
 .card{
 	width: 27%;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	margin: 0 10px;
+	margin-left: 30px;
+	padding: 2%;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px rgb(0 0 0 / 3%);
 }
@@ -266,12 +280,8 @@ h1{
 	margin-bottom: 20px;
 }
 .service__card__img img{
-	height: 333px;
+	width: 100%;
 	margin-bottom: 20px;
-}
-.service__card__dis{
-	margin-bottom: 40px;
-	margin-top: 40px;
 }
 
 @media (max-width: 480px){
@@ -290,6 +300,7 @@ h1{
 *****************************************/
 .price {
 	background-color: #FFFFCC;
+	padding: 1%;
 	
 }
 .price h1{
@@ -318,6 +329,9 @@ td, th {
 /****************************************
 * トップページ 先生紹介
 *****************************************/
+.teacher{
+	margin: 1%;
+}
 .teacher__card__img img{
 	border-radius: 50%;
 	width: 160px;
@@ -330,6 +344,7 @@ td, th {
 	vertical-align: top;
 	text-align: center;
 	margin: 0 10px;
+	padding: 14px;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px rgb(0 0 0 / 3%);
 }
